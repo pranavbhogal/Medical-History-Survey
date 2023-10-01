@@ -16,4 +16,10 @@ app.get('/status', (req, res) => {
     })
 })
 
+app.post('/register', (req, res) => {
+    res.send({
+        message: `${req.body.email} user registered`
+    })
+})
+
 app.listen(process.env.PORT || 8082)
